@@ -1,6 +1,15 @@
 @tailwind base;
 
 /* Write your own custom base styles here */
+@layer base {
+  html,
+  body,
+  body > div:first-child,
+  div#__next,
+  div#__next > div {
+    height: 100%;
+  }
+}
 
 /* Start purging... */
 @tailwind components;

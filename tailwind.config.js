@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: ['./components/**/*.js', './pages/**/*.js'],
   theme: {
@@ -8,6 +10,14 @@ module.exports = {
         'accent-7': '#333',
         success: '#0070f3',
         cyan: '#79FFE1',
+        gray: colors.gray,
+        // gray: {
+        //   // darkest: '#242527',
+        //   dark: '#242527',
+        //   // DEFAULT: '#c0ccda',
+        //   light: '#A9AB9F',
+        //   // lightest: '#f9fafc',
+        // },
       },
       spacing: {
         28: '7rem',
