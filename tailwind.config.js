@@ -3,6 +3,20 @@ const colors = require('tailwindcss/colors')
 module.exports = {
   purge: ['./components/**/*.js', './pages/**/*.js'],
   theme: {
+    fontFamily: {
+      sans: ['Open Sans', 'Noto Sans JP', 'sans-serif'],
+      display: ['"Josefin Sans"'],
+    },
+    borderWidth: {
+      DEFAULT: '1px',
+      0: '0',
+      2: '2px',
+      3: '3px',
+      4: '4px',
+      6: '6px',
+      8: '8px',
+      24: '24px',
+    },
     extend: {
       colors: {
         'accent-1': '#FAFAFA',
@@ -10,6 +24,10 @@ module.exports = {
         'accent-7': '#333',
         success: '#0070f3',
         cyan: '#79FFE1',
+        paleyYellow: {
+          light: '#F5F8E7',
+          dark: '#A9AB9F',
+        },
         gray: colors.gray,
         // gray: {
         //   // darkest: '#242527',
@@ -40,4 +58,5 @@ module.exports = {
       },
     },
   },
+  darkMode: 'media',
 }
