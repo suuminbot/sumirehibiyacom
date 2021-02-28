@@ -4,7 +4,7 @@ import Link from 'next/link'
 export default function Header() {
   return (
     <Container>
-      <div className="flex justify-between items-center px-2 py-20 font-display tracking-wide">
+      <div className="flex justify-between items-center py-20 font-display tracking-wide">
         <h1 className="text-3xl">
           <Link href="/">Sumire Hibiya @suuminbot</Link>
         </h1>

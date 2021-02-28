@@ -2,25 +2,35 @@ import DateFormatter from '../components/date-formatter'
 import CoverImage from './cover-image'
 import Link from 'next/link'
 
-export default function PostPreview({ title, coverImage, date, slug }) {
+export default function PostPreview({ title, coverImage, date, slug, icon }) {
   return (
-    <div class="w-4/12 px-2 mb-10">
-      <div className="mb-4">
+    <div className="flex mb-10">
+      <div className="mr-4 w-32 h-32 flex-none relative flex justify-center items-center">
         <CoverImage
           slug={slug}
           title={title}
           src={coverImage}
-          height={278}
           width={556}
+          height={278}
         />
-      </div>
-      <p className="text-xl font-bold mb-2 leading-snug">
         <Link as={`/posts/${slug}`} href="/posts/[slug]">
-          <a className="hover:underline">{title}</a>
+          <a
+            aria-label={title}
+            className="absolute m-auto bg-white rounded-lg w-16 h-16 flex items-center justify-center text-5xl z-20"
+          >
+            {icon}
+          </a>
         </Link>
-      </p>
-      <div className="text-sm text-paleyYellow-dark">
-        <DateFormatter dateString={date} />
+      </div>
+      <div>
+        <p className="text-xl font-bold mb-2 leading-snug">
+          <Link as={`/posts/${slug}`} href="/posts/[slug]">
+            <a className="hover:underline">{title}</a>
+          </Link>
+        </p>
+        <div className="text-sm text-paleyYellow-dark">
+          <DateFormatter dateString={date} />
+        </div>
       </div>
     </div>
   )

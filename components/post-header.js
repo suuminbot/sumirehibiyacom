@@ -13,7 +13,7 @@ export default function PostHeader({ title, coverImage, date, icon }) {
           <DateFormatter dateString={date} />
         </div>
       </div>
-      <div className="mb-10">
+      <div className="mb-10 relative w-full h-96">
         <CoverImage title={title} src={coverImage} width={1000} height={562} />
       </div>
     </>
