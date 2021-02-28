@@ -2,6 +2,9 @@
 
 /* Write your own custom base styles here */
 @layer base {
+  a {
+    @apply hover:underline;
+  }
   h2 {
     @apply my-4 text-2xl font-bold;
   }

@@ -6,11 +6,13 @@ export default function Header() {
     <Container>
       <div className="flex justify-between items-center py-20 font-display tracking-wide">
         <h1 className="text-3xl">
-          <Link href="/">Sumire Hibiya</Link>
+          <Link href="/">
+            <a className="hover:no-underline">Sumire Hibiya</a>
+          </Link>
         </h1>
         <div className="text-sm leading-none">
-          <Link href="/notes" className="leading-none">
-            NOTES
+          <Link href="/notes">
+            <a className="leading-none">NOTES</a>
           </Link>
         </div>
       </div>

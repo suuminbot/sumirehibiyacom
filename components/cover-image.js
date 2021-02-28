@@ -13,7 +13,7 @@ export default function CoverImage({ title, src, slug }) {
   return (
     <div>
       {slug ? (
-        <Link as={`/posts/${slug}`} href="/posts/[slug]">
+        <Link as={`/notes/${slug}`} href="/notes/[slug]">
           <a aria-label={title}>{image}</a>
         </Link>
       ) : (
