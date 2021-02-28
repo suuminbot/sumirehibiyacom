@@ -5,7 +5,7 @@ import Link from 'next/link'
 export default function PostPreview({ title, coverImage, date, slug, icon }) {
   return (
     <div className="flex mb-10">
-      <div className="mr-4 w-32 h-32 flex-none relative flex justify-center items-center">
+      <div className="mr-4 w-20 h-20 md:w-32 md:h-32 flex-none relative flex justify-center items-center">
         <CoverImage
           slug={slug}
           title={title}
@@ -16,7 +16,7 @@ export default function PostPreview({ title, coverImage, date, slug, icon }) {
         <Link as={`/notes/${slug}`} href="/notes/[slug]">
           <a
             aria-label={title}
-            className="absolute m-auto bg-white rounded-lg w-16 h-16 flex items-center justify-center text-5xl z-20 hover:shadow-lg shadow-none transition"
+            className="absolute m-auto bg-white rounded-lg w-10 h-10 md:w-16 md:h-16 flex items-center justify-center text-2xl md:text-5xl z-20 hover:shadow-lg shadow-none transition"
           >
             {icon}
           </a>
