@@ -4,7 +4,12 @@ module.exports = {
   purge: ['./components/**/*.js', './pages/**/*.js'],
   theme: {
     fontFamily: {
-      sans: ['Open Sans', 'Noto Sans JP', 'sans-serif'],
+      sans: [
+        'Open Sans',
+        'Hiragino Kaku Gothic ProN',
+        'Hiragino Sans',
+        'sans-serif',
+      ],
       display: ['"Josefin Sans"'],
     },
     borderWidth: {

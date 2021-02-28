@@ -6,7 +6,7 @@ export default function Header() {
     <Container>
       <div className="flex justify-between items-center py-20 font-display tracking-wide">
         <h1 className="text-3xl">
-          <Link href="/">Sumire Hibiya @suuminbot</Link>
+          <Link href="/">Sumire Hibiya</Link>
         </h1>
         <div className="text-sm leading-none">
           <Link href="/notes" className="leading-none">

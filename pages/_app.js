@@ -15,7 +15,7 @@ export default function MyApp({ Component, pageProps }) {
     <div>
       <Head>
         <link
-          href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Noto+Sans+JP:wght@300;700&family=Open+Sans:wght@300;700&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans:wght@400;700&display=swap"
           rel="stylesheet"
         />
       </Head>

@@ -6,10 +6,14 @@ export default function Layout({ children }) {
   return (
     <>
       <Meta />
-      <div className="bg-gray-800">
-        <Header />
-        <main>{children}</main>
-        <Footer />
+      <div className="p-6 relative">
+        <div className="h-6 bg-white w-full fixed top-0 z-30" />
+        <div className="h-6 bg-white w-full fixed bottom-0 z-30" />
+        <div className="bg-gray-800">
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </div>
       </div>
     </>
   )
