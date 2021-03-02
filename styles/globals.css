@@ -2,6 +2,9 @@
 
 /* Write your own custom base styles here */
 @layer base {
+  * {
+    @apply antialiased;
+  }
   a {
     @apply hover:underline;
   }
@@ -15,7 +18,7 @@
     @apply mb-5;
   }
   .index a {
-    @apply text-blue-500 underline;
+    @apply text-blue-500;
   }
   .index dl {
     @apply mb-5;

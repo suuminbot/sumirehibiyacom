@@ -1,5 +1,5 @@
 .markdown {
-  @apply text-lg leading-relaxed;
+  @apply text-lg leading-8;
 }
 
 .markdown p,
@@ -10,7 +10,7 @@
 }
 
 .markdown h1 {
-  @apply text-2xl mt-12 mb-4 leading-snug font-bold;
+  @apply text-3xl mt-12 mb-4 leading-snug font-bold;
 }
 
 .markdown h2 {
@@ -18,7 +18,7 @@
 }
 
 .markdown h3 {
-  @apply text-lg md:text-xl mt-8 mb-4 leading-snug font-bold;
+  @apply text-lg md:text-sm mt-8 mb-4 leading-snug font-bold;
 }
 
 .markdown ul {
@@ -26,9 +26,9 @@
 }
 
 .markdown a {
-  @apply underline;
+  @apply text-blue-500;
 }
 
 .markdown strong {
-  @apply bg-indigo-400 bg-opacity-30 dark:text-white;
+  @apply bg-blue-200 bg-opacity-10 dark:text-white;
 }
