@@ -9,7 +9,19 @@
     @apply my-4 text-2xl font-bold;
   }
   h3 {
-    @apply mt-10 mb-4 text-lg font-bold;
+    @apply mt-12 mb-4 text-lg font-bold;
+  }
+  .index p {
+    @apply mb-5;
+  }
+  .index a {
+    @apply text-blue-500 underline;
+  }
+  .index dl {
+    @apply mb-5;
+  }
+  .index dt {
+    @apply font-bold mb-1 leading-relaxed;
   }
   /* html,
   body,
