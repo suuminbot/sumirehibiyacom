@@ -12,6 +12,7 @@ export default function Notes({ allPosts }) {
       <Layout>
         <Head>
           <title>NOTES | {CMS_NAME}</title>
+          <meta property="og:image" content="/assets/og.png" />
         </Head>
         <Container>
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}

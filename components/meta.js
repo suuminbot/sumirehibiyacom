@@ -8,7 +8,6 @@ export default function Meta() {
       <meta name="msapplication-TileColor" content="#1F2937" />
       <meta name="theme-color" content="#1F2937" />
       <meta name="description" content={`${CMS_NAME}`} />
-      <meta property="og:image" content="/assets/og.png" />
     </Head>
   )
 }
