@@ -1,5 +1,5 @@
 .markdown {
-  @apply text-lg leading-8;
+  @apply text-lg md:text-lg leading-8;
 }
 
 .markdown p,
@@ -10,7 +10,7 @@
 }
 
 .markdown h1 {
-  @apply text-3xl mt-12 mb-4 leading-snug font-bold;
+  @apply text-2xl md:text-3xl mt-12 mb-4 leading-snug font-bold;
 }
 
 .markdown h2 {
@@ -30,5 +30,5 @@
 }
 
 .markdown strong {
-  @apply bg-blue-200 bg-opacity-10 dark:text-white;
+  @apply bg-blue-200 bg-opacity-40 dark:bg-opacity-10 dark:text-white;
 }
