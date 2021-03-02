@@ -10,6 +10,7 @@ export default function Index() {
       <Layout>
         <Head>
           <title>{CMS_NAME}</title>
+          <meta property="og:image" content="/assets/og.png" />
         </Head>
         <Container>
           <div className="text-center mb-8">
