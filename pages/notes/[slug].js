@@ -28,7 +28,10 @@ export default function Post({ post, preview }) {
                   {post.title} | {CMS_NAME}
                 </title>
                 <meta name="twitter:card" content="summary" />
-                <meta property="og:image" content={post.ogImage.url} />
+                <meta
+                  property="og:image"
+                  content={'https://sumirehibiya.com' + post.ogImage.url}
+                />
                 <meta property="og:title" content={post.title} />
               </Head>
               <PostHeader
