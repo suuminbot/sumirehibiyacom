@@ -30,5 +30,5 @@
 }
 
 .markdown strong {
-  @apply bg-indigo-400 bg-opacity-30 text-white;
+  @apply bg-indigo-400 bg-opacity-30 dark:text-white;
 }
