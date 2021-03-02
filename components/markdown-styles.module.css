@@ -30,5 +30,5 @@
 }
 
 .markdown strong {
-  @apply bg-blue-200 bg-opacity-10;
+  @apply bg-blue-200 bg-opacity-10 dark:text-white;
 }
