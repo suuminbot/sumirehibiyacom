@@ -1,5 +1,10 @@
-import '../styles/globals.css'
+import Router from 'next/router'
 import Head from 'next/head'
+import '../styles/globals.css'
+
+// GA読み込み
+import * as gtag from '../lib/gtag'
+Router.events.on('routeChangeComplete', (url) => gtag.pageview(url))
 
 // FontAwesome読み込み
 import { library } from '@fortawesome/fontawesome-svg-core'
