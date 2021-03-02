@@ -1,6 +1,6 @@
 ---
 title: 'ソーシャルレンディング専門メディアを運営する株式会社クラウドポートにjoinしました！'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
+excerpt: '2017年6月で2年半勤めた株式会社グッドパッチを退職し、ソーシャルレンディング専門メディアを運営する[クラウドポート](https://www.crowdport.jp/)に join しました！'
 coverImage: '/assets/blog/join-crowdport/lending-startup-night.jpg'
 date: '2017-09-03'
 icon: '📝'

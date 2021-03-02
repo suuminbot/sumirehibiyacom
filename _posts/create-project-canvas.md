@@ -1,6 +1,6 @@
 ---
 title: 'プロジェクトの最初に、Project Canvas（プロジェクトキャンバス）を作ろう'
-excerpt: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus.'
+excerpt: 'デザイン案件のオリエンやキックオフに参加する時、実際にそのプロジェクトに入るかどうか関係なく、必ず最初の打ち合わせでそのプロジェクトのゴールをクライアントとすり合わせるようにしています。当たり前ですが…その当たり前が大事…！'
 coverImage: '/assets/blog/create-project-canvas/coverImage.jpg'
 icon: '📝'
 date: '2017-11-26'
