@@ -1,5 +1,5 @@
 .markdown {
-  @apply text-lg md:text-lg leading-8;
+  @apply text-base leading-7 md:text-lg;
 }
 
 .markdown p,
@@ -7,6 +7,10 @@
 .markdown ol,
 .markdown blockquote {
   @apply my-6;
+}
+
+.markdown li > ul {
+  @apply my-2;
 }
 
 .markdown h1 {
@@ -31,4 +35,19 @@
 
 .markdown strong {
   @apply bg-blue-200 bg-opacity-40 dark:bg-opacity-10 dark:text-paleyYellow-light;
+}
+
+.markdown blockquote {
+  @apply px-4 py-4 border-l-4 border-white dark:bg-gray-100 dark:bg-opacity-10;
+}
+
+.markdown blockquote p:first-child {
+  @apply mt-0;
+}
+.markdown blockquote p:last-child {
+  @apply mb-0;
+}
+
+.markdown code {
+  @apply p-1 bg-gray-400 bg-opacity-10 dark:bg-gray-100 rounded text-yellow-600;
 }
