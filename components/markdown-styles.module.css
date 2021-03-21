@@ -1,5 +1,5 @@
 .markdown {
-  @apply text-base leading-7 md:text-lg md:leading-7;
+  @apply text-base leading-7 md:text-lg;
 }
 
 .markdown p,
