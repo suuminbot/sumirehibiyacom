@@ -9,6 +9,10 @@
   @apply my-6;
 }
 
+.markdown li > ul {
+  @apply my-2;
+}
+
 .markdown h1 {
   @apply text-2xl md:text-3xl mt-12 mb-4 leading-snug font-bold;
 }
@@ -31,4 +35,12 @@
 
 .markdown strong {
   @apply bg-blue-200 bg-opacity-40 dark:bg-opacity-10 dark:text-paleyYellow-light;
+}
+
+.markdown blockquote {
+  @apply pl-4 py-0.5 border-l-3 border-white bg-gray-100 bg-opacity-10;
+}
+
+.markdown code {
+  @apply p-1 bg-gray-100 bg-opacity-10 rounded text-yellow-600;
 }
