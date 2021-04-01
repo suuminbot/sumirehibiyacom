@@ -27,7 +27,7 @@ export default function Post({ post, preview }) {
                 <title>
                   {post.title} | {CMS_NAME}
                 </title>
-                <meta name="twitter:card" content="summary" />
+                <meta name="twitter:card" content="summary_large_image" />
                 <meta
                   property="og:image"
                   content={'https://sumirehibiya.com' + post.ogImage.url}
