@@ -26,13 +26,6 @@
   .index dt {
     @apply font-bold mb-1 leading-relaxed;
   }
-  /* html,
-  body,
-  body > div:first-child,
-  div#__next,
-  div#__next > div {
-    height: 100%;
-  } */
 }
 
 /* Start purging... */

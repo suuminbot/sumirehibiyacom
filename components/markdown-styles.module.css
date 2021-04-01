@@ -1,12 +1,12 @@
 .markdown {
-  @apply text-base leading-7 md:text-lg;
+  @apply text-base;
 }
 
 .markdown p,
 .markdown ul,
 .markdown ol,
 .markdown blockquote {
-  @apply my-6;
+  @apply my-6 leading-8;
 }
 
 .markdown li > ul {
@@ -26,7 +26,11 @@
 }
 
 .markdown ul {
-  @apply list-disc pl-6;
+  @apply list-disc pl-8;
+}
+
+.markdown ol {
+  @apply list-decimal pl-8;
 }
 
 .markdown a {
