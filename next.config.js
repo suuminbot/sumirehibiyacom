@@ -1,6 +1,4 @@
-module.exports = {
-  experimental: {
-    optimizeFonts: true,
-    scrollRestoration: true,
-  },
-}
+/** @type {import('next').NextConfig} */
+const nextConfig = {}
+
+module.exports = nextConfig

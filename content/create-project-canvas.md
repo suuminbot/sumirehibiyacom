@@ -1,11 +1,11 @@
 ---
 title: 'プロジェクトの最初に、Project Canvas（プロジェクトキャンバス）を作ろう'
 excerpt: 'デザイン案件のオリエンやキックオフに参加する時、実際にそのプロジェクトに入るかどうか関係なく、必ず最初の打ち合わせでそのプロジェクトのゴールをクライアントとすり合わせるようにしています。当たり前ですが…その当たり前が大事…！'
-coverImage: '/assets/blog/create-project-canvas/coverImage.jpg'
+coverImage: '/blog/create-project-canvas/coverImage.jpg'
 icon: '📝'
 date: '2017-11-26'
 ogImage:
-  url: '/assets/blog/create-project-canvas/coverImage.jpg'
+  url: '/blog/create-project-canvas/coverImage.jpg'
 ---
 
 Photo by Patrick Perkins on Unsplash
@@ -31,10 +31,10 @@ Photo by Patrick Perkins on Unsplash
 
 # リーンキャンバス+α の「プロジェクトキャンバス」を使う
 
-![プロジェクトキャンバス](/assets/blog/create-project-canvas/projectCanvas_01.png)
+![プロジェクトキャンバス](/blog/create-project-canvas/projectCanvas_01.png)
 
 リーンキャンバスってご存知の方も多いと思いますが、私の場合これに「プロジェクトゴール」というのをくっつけ、「プロジェクトキャンバス」と呼んで使っています。
-これは前職で[藤井さん（現・ザッパラス）](/assets/blog/create-project-canvas/https://about.me/mikihirocks)がやっていたことを真似しています。🙏
+これは前職で[藤井さん（現・ザッパラス）](/blog/create-project-canvas/https://about.me/mikihirocks)がやっていたことを真似しています。🙏
 
 とはいえ、最初に埋めるのはリーンキャンバスの内容なので、それを先に見ていきましょう 🙋
 
@@ -72,7 +72,7 @@ Keynote で作ることもありますが、Slack に貼っつけておきたい
 
 ### 例 1. ソリューションが先に来ている場合
 
-![例1](/assets/blog/create-project-canvas/example_01.png)
+![例1](/blog/create-project-canvas/example_01.png)
 
 以前お手伝いをしたスマートクッションを作るというプロジェクトはこのパターンでした。
 
@@ -82,9 +82,9 @@ Keynote で作ることもありますが、Slack に貼っつけておきたい
 
 ### 例 2. 課題とユーザー像が見えている場合
 
-![例2](/assets/blog/create-project-canvas/example_02.png)
+![例2](/blog/create-project-canvas/example_02.png)
 
-最近[本業でリリースした新機能](/assets/blog/create-project-canvas/https://www.crowdport.jp/news/5669/)はまさにこのパターンでした。
+最近[本業でリリースした新機能](/blog/create-project-canvas/https://www.crowdport.jp/news/5669/)はまさにこのパターンでした。
 
 ユーザーインタビューやアンケートで明確に課題があるのは分かっていて、どういうユーザーさんがそれを欲しているか分かってはいるものの、毎日利用してもらうにはどんな機能が必要かまだ不確か。
 
@@ -93,7 +93,7 @@ Keynote で作ることもありますが、Slack に貼っつけておきたい
 # 終わりに
 
 ディレクターや PM、クライアントサイドの方からしてもメリットが多いので是非一緒にプロジェクトキャンバス作りやりましょう！という趣旨の記事ですが、若手デザイナの方もこういったことを意識するとより仕事をしやすくなるんじゃないかなと思います。
-（[デザインには論点がいっぱいあるのでそれを上手く捉えようという話は過去書きましたのでご参照ください 🙏](/assets/blog/create-project-canvas/https://speakerdeck.com/suuminbot/xin-siijia-zhi-wozuo-rutameni-jin-sugudezainagadekirukoto)）
+（[デザインには論点がいっぱいあるのでそれを上手く捉えようという話は過去書きましたのでご参照ください 🙏](/blog/create-project-canvas/https://speakerdeck.com/suuminbot/xin-siijia-zhi-wozuo-rutameni-jin-sugudezainagadekirukoto)）
 
 **私自身自分が以前よりも成長したなーと思う 1 つの要因に、前職でこのプロジェクトキャンバスづくりを 1 年間で数十件はしたこと** があるなと思っています。
 
@@ -105,11 +105,11 @@ potential client と会う前はもちろん、最初にお会いした MTG の�
 
 薄味な記事になってしまった気がする！
 
-プロジェクトキックオフ時にプロジェクトキャンバスを書いて、論点を明確にする、というの伝わると嬉しいです。。質問や「うちはこうしているよー！」というのがあったら [twitter](/assets/blog/create-project-canvas/https://twitter.com/suuminbot)で教えてください 🙏
+プロジェクトキックオフ時にプロジェクトキャンバスを書いて、論点を明確にする、というの伝わると嬉しいです。。質問や「うちはこうしているよー！」というのがあったら [twitter](/blog/create-project-canvas/https://twitter.com/suuminbot)で教えてください 🙏
 
 ### 【PR】クラウドポートではエンジニアを募集しています
 
-[クラウドポート](/assets/blog/create-project-canvas/https://crowdport.co.jp/)ではプロダクト開発チームを一緒にやっていくエンジニアさんを募集しています！まだまだ日本では広まっていないけど日本人と親和性の高い資産運用を広めるというミッションに挑戦したい方、是非ご連絡を頂けると幸いです！気軽にランチでも行きましょう〜🍺
+[クラウドポート](/blog/create-project-canvas/https://crowdport.co.jp/)ではプロダクト開発チームを一緒にやっていくエンジニアさんを募集しています！まだまだ日本では広まっていないけど日本人と親和性の高い資産運用を広めるというミッションに挑戦したい方、是非ご連絡を頂けると幸いです！気軽にランチでも行きましょう〜🍺
 
-![crowdport](/assets/blog/create-project-canvas/crowdport.jpg)
+![crowdport](/blog/create-project-canvas/crowdport.jpg)
 ネイビーの服を着る人ばっかなのと、課題解決志向な人しかいないというのが特徴の会社です。金融系バックグラウンド、Web 系バックグラウンドのメンバーがそれぞれバランスよくいます。まだメンバー少ない今のうちから、会社とプロダクトを一緒に作っていこうと思ってくれる仲間が…ほしい…ﾊﾟﾀﾘ

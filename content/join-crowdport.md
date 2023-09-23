@@ -1,11 +1,11 @@
 ---
 title: 'ソーシャルレンディング専門メディアを運営する株式会社クラウドポートにjoinしました！'
 excerpt: '2017年6月で2年半勤めた株式会社グッドパッチを退職し、ソーシャルレンディング専門メディアを運営する[クラウドポート](https://www.crowdport.jp/)に join しました！'
-coverImage: '/assets/blog/join-crowdport/lending-startup-night.jpg'
+coverImage: '/blog/join-crowdport/lending-startup-night.jpg'
 date: '2017-09-03'
 icon: '📝'
 ogImage:
-  url: '/assets/blog/join-crowdport/lending-startup-night.jpg'
+  url: '/blog/join-crowdport/lending-startup-night.jpg'
 ---
 
 2017 年 6 月で 2 年半勤めた株式会社グッドパッチを退職し、ソーシャルレンディング専門メディアを運営する[クラウドポート](https://www.crowdport.jp/)に join しました！
@@ -20,7 +20,7 @@ ogImage:
 
 ## 転職に至った経緯
 
-![いつかのpizzapatch](/assets/blog/join-crowdport/pizzapatch.jpg)
+![いつかのpizzapatch](/blog/join-crowdport/pizzapatch.jpg)
 
 グッドパッチでは受託事業のいちメンバーとして人材、グループウェア、医療系と様々な領域のプロジェクトに関わらせてもらったり、15 名を超えるチームのリーダーを務めさせてもらいました。その後自社事業の立ち上げも担当させてもらい（色々あって立ち上がってないんだけど…）、チャレンジングな機会をたくさん頂きました。
 
@@ -52,7 +52,7 @@ FInTech 領域というのは、これまでに取り組んだことのない領
 
 ## ソーシャルレンディングって？
 
-![ソーシャルレンディングとは](/assets/blog/join-crowdport/about-socialLending@2x.png)
+![ソーシャルレンディングとは](/blog/join-crowdport/about-socialLending@2x.png)
 
 **ソーシャルレンディングとは、お金を借りたい会社と、お金を貸したい人をマッチングするサービスです。**
 
@@ -66,11 +66,11 @@ FInTech 領域というのは、これまでに取り組んだことのない領
 
 ### 比較サービス
 
-![クラウドポートは、ソーシャルレンディング事業者とそれぞれの事業者のファンドの比較ができるサービス](/assets/blog/join-crowdport/screen_01.png)
+![クラウドポートは、ソーシャルレンディング事業者とそれぞれの事業者のファンドの比較ができるサービス](/blog/join-crowdport/screen_01.png)
 
 いざ投資資金を握りしめ投資をしようと思っても、まずどの会社で口座を作るかを検討するのも比較が大変だし、次にファンドに実際投資をしようとする際も自分の条件に合致するファンドを見つけるのはすごく大変で。。**それを一つのサービス内で統一されたフォーマットで比較できるのがクラウドポートの比較サイトです。**
 
-![ファンドの比較](/assets/blog/join-crowdport/screen_02.png)
+![ファンドの比較](/blog/join-crowdport/screen_02.png)
 
 また、ソーシャルレンディングではファンドを選ぶ以前に**「どの会社の」ファンドに投資するか**がとても重要です。
 
@@ -78,7 +78,7 @@ FInTech 領域というのは、これまでに取り組んだことのない領
 
 ### メディア
 
-![クラウドポートニュース](/assets/blog/join-crowdport/crowdportnews.png)
+![クラウドポートニュース](/blog/join-crowdport/crowdportnews.png)
 そこで投資家さんのお役に立てるのが、**国内主要ソーシャルレンディング事業者 23 社や、ソーシャルレンディングに関する最新の情報を中立的に広く深くお伝えするクラウドポートニュース** です。
 
 **株式会社クラウドポートはその 2 つのサービス・メディアを運営し、「あらゆる人にとって価値ある投資機会に出会える場を創造する。」というミッションを叶えようとしています。** 今出ているプロダクト・機能はまだまだ理想の一部分でしかなく、今後もがんがん新しいプロダクト・機能をリリースしていく予定です！

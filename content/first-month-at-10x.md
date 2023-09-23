@@ -1,11 +1,11 @@
 ---
 title: '10Xで1ヶ月働いたリアルな感想'
 excerpt: 10Xで1ヶ月働いたリアルな感想です。'
-coverImage: '/assets/blog/first-month-at-10x/cover.jpg'
+coverImage: '/blog/first-month-at-10x/cover.jpg'
 date: '2021-04-02'
 icon: '🌸'
 ogImage:
-  url: '/assets/blog/first-month-at-10x/cover.jpg'
+  url: '/blog/first-month-at-10x/cover.jpg'
 ---
 
 2月下旬に入社して気づいたらあっという間に1ヶ月経っていたのでリアルな感想をメモっておこうと思います。
@@ -38,7 +38,7 @@ StailerのDesignSystemの件は別記事で詳しく書きたいという気持�
 
 ## 新規プロジェクトどう？
 
-![01](/assets/blog/first-month-at-10x/01.jpg)
+![01](/blog/first-month-at-10x/01.jpg)
 
 お客様が利用するアプリと、業務システム双方新しく作り上げるUXがありほぼ同時並行でデザインを進めてます。
 
@@ -57,7 +57,7 @@ StailerのDesignSystemの件は別記事で詳しく書きたいという気持�
 
 ## 社内の雰囲気とかコミュニケーションとか
 
-![02](/assets/blog/first-month-at-10x/02.png)
+![02](/blog/first-month-at-10x/02.png)
 
 ちょっと詰まった時などに「今ちょっといいですか？」とgoogle meetですぐに会話始めるのが当たり前な雰囲気なのがとてもよいです。今後こういうコミュニケーションが取れない環境では働けなさそうです。
 
@@ -67,7 +67,7 @@ Stailerの事業開始以降フルタイムで稼働しているデザイナは�
 
 基本的にはオンラインでのコミュニケーションが主になりますが、いいことにもっと良いじゃん！ありがとう！なオーラ出していきたいと思って、自分ができる草の根活動としてとにかくアゲアゲ系なemojiをどんどん追加し気軽に押して感謝を伝えるようにしています。爆速！最高！助かる！とかどんどん押していこう 👐
 
-![03](/assets/blog/first-month-at-10x/03.png)
+![03](/blog/first-month-at-10x/03.png)
 
 ## 全体を通して
 

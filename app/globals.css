@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply antialiased;
+  }
+  a {
+    @apply hover:underline;
+  }
+  h2 {
+    @apply my-4 text-2xl font-bold;
+  }
+  h3 {
+    @apply mt-12 mb-4 text-lg font-bold;
+  }
+}
