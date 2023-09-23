@@ -14,7 +14,7 @@ type Props = {
   }
 }
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: Props) {
   const { slug } = params
   const filePath = path.join(process.cwd(), 'content', `${slug}.md`)
 
