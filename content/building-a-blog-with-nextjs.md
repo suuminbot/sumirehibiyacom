@@ -1,11 +1,11 @@
 ---
 title: '自分でブログを作る理由（個人ブログをNext.jsに移行した話）'
 excerpt: 'Next.js, Tailwind CSSでブログを作った話です'
-coverImage: '/assets/blog/building-a-blog-with-nextjs/cover.jpg'
+coverImage: '/blog/building-a-blog-with-nextjs/cover.jpg'
 date: '2021-03-21'
 icon: '👩‍💻'
 ogImage:
-  url: '/assets/blog/building-a-blog-with-nextjs/cover.jpg'
+  url: '/blog/building-a-blog-with-nextjs/cover.jpg'
 ---
 
 転職に際してブログを書きたいな〜と思ったタイミングで、数年間放置していたこの個人サイト（ブログ）をNext.jsとTailwind CSSで作り直しました。
@@ -65,7 +65,7 @@ Tailwind CSSのコンセプトである「ユーティリティファースト�
 - 「40pxのpaddingほしい」っていう時にpxでの数値と該当するnameが浮かばない（40pxのpadding = 2.5rem, `.p-10` を利用する）
   - ドキュメントを見るかエディタの補完機能でpxに対応するクラスを探している
 
-![01](/assets/blog/building-a-blog-with-nextjs/01.png)
+![01](/blog/building-a-blog-with-nextjs/01.png)
 [https://tailwindcss.com/docs/customizing-spacing](https://tailwindcss.com/docs/customizing-spacing)
 
 フォントサイズ以外にpaddingやmarginなどのサイズ指定もrem単位なので、デザインデータを作る際はrootの値が16pxという前提の元、レイアウト類などの大きめのものは8px単位、小さめのコンポーネントは4px単位などで組んでいくとよいなと思いました。（あとはデザインファイルとマークアップ後の画面がぴったり一致することを目指さないという心持ちも必要）

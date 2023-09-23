@@ -38,7 +38,7 @@
 }
 
 .markdown strong {
-  @apply bg-blue-200 bg-opacity-40 dark:bg-opacity-10 dark:text-paleyYellow-light;
+  @apply bg-blue-200 bg-opacity-40 dark:bg-opacity-10 dark:text-paleYellow-light;
 }
 
 .markdown blockquote {
