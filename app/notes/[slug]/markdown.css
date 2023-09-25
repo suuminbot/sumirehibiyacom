@@ -38,11 +38,11 @@
 }
 
 .markdown strong {
-  @apply bg-blue-200 bg-opacity-40 dark:bg-opacity-10 dark:text-paleYellow-light;
+  @apply bg-blue-200 bg-opacity-40;
 }
 
 .markdown blockquote {
-  @apply px-4 py-4 border-l-4 border-white dark:bg-gray-100 dark:bg-opacity-10;
+  @apply px-4 py-4 border-l-4 border-white;
 }
 
 .markdown blockquote p:first-child {
@@ -53,5 +53,5 @@
 }
 
 .markdown code {
-  @apply p-1 bg-gray-400 bg-opacity-10 dark:bg-gray-100 rounded text-yellow-600;
+  @apply p-1 bg-gray-400 bg-opacity-10 rounded text-yellow-600;
 }
