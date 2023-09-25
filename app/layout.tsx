@@ -28,7 +28,7 @@ export default function RootLayout({
           <div className="bg-gray-100">
             <div className="container px-4 md:max-w-screen-sm m-auto">
               <header className="flex justify-between items-center py-12 md:py-20 font-display tracking-wide">
-                <div className="flex items-center">
+                <div className="md:flex items-center">
                   <h1 className="text-2xl md:text-3xl">
                     <Link href="/" className="hover:no-underline mr-4">
                       Scratchpad
@@ -38,7 +38,7 @@ export default function RootLayout({
                 </div>
 
                 <div className="text-sm leading-none">
-                  <Link href="/" className="mr-3">
+                  <Link href="/" className="mr-3 hidden md:inline">
                     HOME
                   </Link>
                   <Link href="/about" className="mr-3">
@@ -48,7 +48,6 @@ export default function RootLayout({
                     href="https://moments-of-joy.hatenablog.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="mr-3"
                   >
                     Hatena BLOG
                   </a>
