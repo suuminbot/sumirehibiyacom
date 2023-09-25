@@ -1,23 +1,23 @@
-import "./globals.css";
-import { Josefin_Sans, Inter } from "next/font/google";
-import Link from "next/link";
+import './globals.css'
+import { Josefin_Sans, Inter } from 'next/font/google'
+import Link from 'next/link'
 
 const josefin_Sans = Josefin_Sans({
-  subsets: ["latin"],
-  weight: "400",
-  variable: "--font-josefinsans",
-  display: "swap",
-});
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-josefinsans',
+  display: 'swap',
+})
 
 const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-});
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="ja" className={`${josefin_Sans.variable} ${inter.variable}`}>
@@ -25,7 +25,7 @@ export default function RootLayout({
         <div className="py-3 md:p-6 relative">
           <div className="h-3 md:h-6 bg-white w-full fixed top-0 z-30" />
           <div className="h-3 md:h-6 bg-white w-full fixed bottom-0 z-30" />
-          <div className="bg-gray-100 dark:bg-gray-800">
+          <div className="bg-gray-100">
             <div className="container px-4 md:max-w-screen-sm m-auto">
               <header className="flex justify-between items-center py-12 md:py-20 font-display tracking-wide">
                 <div className="flex items-center">
@@ -63,5 +63,5 @@ export default function RootLayout({
         </div>
       </body>
     </html>
-  );
+  )
 }
