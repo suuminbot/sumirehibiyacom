@@ -18,11 +18,11 @@
 }
 
 .markdown h2 {
-  @apply text-xl md:text-2xl mt-12 mb-4 leading-snug font-bold;
+  @apply text-xl md:text-2xl mt-12 mb-4 pb-2 border-b-2 leading-snug font-bold;
 }
 
 .markdown h3 {
-  @apply text-lg md:text-sm mt-8 mb-4 leading-snug font-bold;
+  @apply text-lg md:text-xl mt-8 mb-4 leading-snug font-bold;
 }
 
 .markdown ul {
@@ -42,7 +42,7 @@
 }
 
 .markdown blockquote {
-  @apply px-4 py-4 border-l-4 border-white;
+  @apply px-4 py-6 rounded-md bg-white;
 }
 
 .markdown blockquote p:first-child {
@@ -50,6 +50,10 @@
 }
 .markdown blockquote p:last-child {
   @apply mb-0;
+}
+
+.markdown ul {
+  @apply mt-0 mb-0;
 }
 
 .markdown code {
