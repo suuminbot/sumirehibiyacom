@@ -69,7 +69,7 @@ export default async function BlogPost({ params }: Props) {
         />
       </div>
       <div
-        className="markdown"
+        className="markdown md:w-2/3 m-auto"
         dangerouslySetInnerHTML={{ __html: contentHtml }}
       ></div>
     </>
