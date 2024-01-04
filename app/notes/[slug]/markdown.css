@@ -1,12 +1,12 @@
 .markdown {
-  @apply text-base md:text-lg;
+  @apply text-base;
 }
 
 .markdown p,
 .markdown ul,
 .markdown ol,
 .markdown blockquote {
-  @apply my-6 leading-8;
+  @apply my-6 leading-9;
 }
 
 .markdown li > ul {
@@ -14,15 +14,15 @@
 }
 
 .markdown h1 {
-  @apply text-2xl md:text-3xl mt-12 mb-4 leading-snug font-bold;
+  @apply text-2xl mt-12 mb-4 leading-snug font-bold;
 }
 
 .markdown h2 {
-  @apply text-xl md:text-2xl mt-12 mb-4 pb-2 border-b-2 leading-snug font-bold;
+  @apply text-xl mt-12 mb-4 pb-2 border-b-2 leading-snug font-bold;
 }
 
 .markdown h3 {
-  @apply text-lg md:text-xl mt-8 mb-4 leading-snug font-bold;
+  @apply text-lg mt-8 mb-4 leading-snug font-bold;
 }
 
 .markdown ul {

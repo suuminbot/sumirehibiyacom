@@ -60,7 +60,7 @@ export default async function BlogPost({ params }: Props) {
         </h1>
         <p className="text-center text-paleYellow-dark">{d}</p>
       </div>
-      <div className="mb-10 -mx-4 lg:-mx-24 relative h-60 md:h-72 lg:h-96">
+      <div className="relative m-auto mb-10 -mx-4 md:w-5/6 md:m-auto lg:w-3/5 h-72 md:h-80 lg:h-96">
         <Image
           src={`${coverImage}`}
           alt={`${title}`}
@@ -69,7 +69,7 @@ export default async function BlogPost({ params }: Props) {
         />
       </div>
       <div
-        className="markdown md:w-2/3 m-auto"
+        className="markdown md:w-2/3 lg:w-3/5 xl:w-2/5 m-auto"
         dangerouslySetInnerHTML={{ __html: contentHtml }}
       ></div>
     </>

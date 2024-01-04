@@ -44,12 +44,9 @@ export default async function Home() {
   )
 
   return (
-    <div className="flex flex-wrap">
+    <div className="grid gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
       {posts.map((post) => (
-        <div
-          key={post.slug}
-          className="xl:w-1/3 lg:w-1/2 lg:pr-4 flex mb-10 items-center"
-        >
+        <div key={post.slug} className="flex mb-10 items-center">
           <Link
             href={`/notes/${post.slug}`}
             className="mr-6 w-20 h-20 md:w-32 md:h-32 flex-none relative flex justify-center items-center hover:no-underline"
@@ -65,11 +62,11 @@ export default async function Home() {
           <div>
             <Link
               href={`/notes/${post.slug}`}
-              className="text-xl font-bold block mb-2"
+              className="text-sm font-bold block mb-2"
             >
               {post.frontmatter.title}
             </Link>
-            <p className="text-sm">{post.d}</p>
+            <p className="text-xs">{post.d}</p>
           </div>
         </div>
       ))}
