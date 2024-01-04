@@ -1,35 +1,29 @@
 import type { Metadata } from 'next'
-import Link from 'next/link'
-import Image from 'next/image'
 import PageTitle from '../components/pageTitle'
+import BookCard from './components/bookCard'
+import Books from '../../data/library/books'
 
 export const metadata: Metadata = {
   title: 'Library - sumirehibiya.com',
 }
 
-export default function Library() {
-  return (
-    <div>
-      <PageTitle text="LIBRARY" />
+const Library: React.FC = () => (
+  <div>
+    <PageTitle text="LIBRARY" />
 
-      <div>
-        <Link
-          href="hoeg"
-          className="w-1/5 border-2 md:w-32 md:h-32 hover:no-underline"
-        >
-          <Image
-            src="/og.png"
-            alt=""
-            width="300"
-            height="100"
-            // className="w-full object-cover"
-          />
-          <div>
-            <p className="text-xl font-bold block mb-2">bookname</p>
-            <p className="text-sm">hoge</p>
-          </div>
-        </Link>
-      </div>
+    <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4">
+      {Books.map((book) => (
+        <BookCard
+          key={book.title}
+          title={book.title}
+          imageUrl={book.imageUrl}
+          author={book.author}
+          status={book.status}
+          url={book.url}
+        />
+      ))}
     </div>
-  )
-}
+  </div>
+)
+
+export default Library
