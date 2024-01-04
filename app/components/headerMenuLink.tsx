@@ -1,7 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
 
-const MenuLink = ({ href, label, currentPath }) => (
+type MenuLinkProps = {
+  href: string
+  label: string
+  currentPath: string
+}
+
+const MenuLink: React.FC<MenuLinkProps> = ({ href, label, currentPath }) => (
   <Link
     href={href}
     className={`text-xs p-2 mx-0.5 !leading-none hover:no-underline ${
