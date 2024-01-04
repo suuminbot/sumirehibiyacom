@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function About() {
   return (
-    <div className="md:w-3/5 md:m-auto">
+    <div className="md:w-4/5 lg:w-3/5 md:m-auto">
       <PageTitle text="Sumire Hibiya" />
       <div className="grid md:grid-cols-5 gap-12">
         <div className="relative col-span-5 h-80 md:col-span-2">
