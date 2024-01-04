@@ -15,4 +15,7 @@
   h3 {
     @apply mt-12 mb-4 text-lg font-bold;
   }
+  h3:first-child {
+    @apply mt-0;
+  }
 }
