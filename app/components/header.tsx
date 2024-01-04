@@ -1,10 +1,11 @@
 import Link from 'next/link'
+import MenuLink from './headerMenuLink'
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center py-4 md:p-10 font-display tracking-wide">
-      <div className="md:flex items-center">
-        <h1 className="text-2xl md:text-3xl">
+    <header className="fixed z-40 top-0 left-0 right-0 bg-opacity-50 backdrop-blur-xl border-b bg-gray-100 flex justify-center flex-col items-center md:flex-row md:justify-between p-6  md:p-10 font-display tracking-wide">
+      <div className="flex items-center mb-4 md:mb-0">
+        <h1 className="text-xl !leading-none">
           <Link href="/" className="hover:no-underline mr-4">
             Scratchpad
           </Link>
@@ -12,23 +13,8 @@ export default function Header() {
         <p>by @suuminbot</p>
       </div>
 
-      <div className="text-sm leading-none">
-        <Link href="/" className="mr-3 hidden md:inline">
-          HOME
-        </Link>
-        <Link href="/library" className="mr-3">
-          LIBRARY
-        </Link>
-        <Link href="/about" className="mr-3">
-          ABOUT
-        </Link>
-        <a
-          href="https://moments-of-joy.hatenablog.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Hatena BLOG
-        </a>
+      <div className="!leading-none text-xs">
+        <MenuLink />
       </div>
     </header>
   )
