@@ -40,11 +40,11 @@ const BookCard: React.FC<BookCardProps> = ({
 }) => (
   <Link
     href={url}
-    className="block p-4 rounded-2xl transition-all group hover:no-underline"
+    className="block p-1 md:p-4 rounded-2xl transition-all group hover:no-underline"
     rel="noopener noreferrer"
     target="_blank"
   >
-    <div className="h-64 mb-4 relative">
+    <div className="h-48 md:h-64 mb-4 relative">
       <Image
         src={imageUrl}
         alt={title}

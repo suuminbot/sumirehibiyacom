@@ -1,44 +1,15 @@
-'use client'
 import React from 'react'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 
-const MenuLink = () => {
-  const currentPath = usePathname()
-  return (
-    <div>
-      <Link
-        href={'/'}
-        className={
-          currentPath === '/'
-            ? 'text-green-500 font-semibold'
-            : 'text-slate-600'
-        }
-      >
-        HOME
-      </Link>
-      <Link
-        href={'/library'}
-        className={
-          currentPath === '/library'
-            ? 'text-green-500 font-semibold'
-            : 'text-slate-600'
-        }
-      >
-        LIBRARY
-      </Link>
-      <Link
-        href={'/about'}
-        className={
-          currentPath === '/about'
-            ? 'text-green-500 font-semibold'
-            : 'text-slate-600'
-        }
-      >
-        ABOUT
-      </Link>
-    </div>
-  )
-}
+const MenuLink = ({ href, label, currentPath }) => (
+  <Link
+    href={href}
+    className={`text-xs p-2 mx-0.5 !leading-none hover:no-underline ${
+      currentPath === href ? 'bg-white rounded-lg ' : ''
+    }`}
+  >
+    {label}
+  </Link>
+)
 
 export default MenuLink
