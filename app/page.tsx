@@ -2,7 +2,7 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import Link from 'next/link'
-import Image from 'next/image'
+// import Image from 'next/image'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -55,12 +55,12 @@ export default async function Home() {
             className="mr-6 w-20 h-20 md:w-32 md:h-32 flex-none relative flex justify-center items-center hover:no-underline"
           >
             <p className="z-10 p-4 bg-white rounded">{post.frontmatter.icon}</p>
-            <Image
+            {/* <Image
               src={`${post.frontmatter.coverImage}`}
               alt={`${post.frontmatter.title}`}
               fill
               className="object-cover"
-            />
+            /> */}
           </Link>
           <div>
             <Link
