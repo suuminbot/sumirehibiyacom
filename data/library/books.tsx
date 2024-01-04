@@ -3,7 +3,8 @@ export type Book = {
   author: string
   imageUrl: string
   url: string
-  status: 'unread' | 'inProgress' | 'read' // 未読または既読
+  status: 'unread' | 'inProgress' | 'read'
+  readDate?: string // 読了年月 例) 2024/01
 }
 
 const books: Book[] = [
@@ -35,6 +36,7 @@ const books: Book[] = [
     imageUrl: '/data/library/samish.jpg',
     url: 'https://amzn.to/3S5XfhS',
     status: 'read',
+    readDate: '2023/11',
   },
   {
     title: 'ヘルシンキ 生活の練習',
@@ -42,16 +44,25 @@ const books: Book[] = [
     imageUrl: '/data/library/helsinki.jpg',
     url: 'https://amzn.to/3S9dTgQ',
     status: 'read',
+    readDate: '2023/11',
   },
-
   {
-    title: 'book2',
-    author: 'Author 2',
-    imageUrl: '/data/library/samish.jpg',
-    url: 'https://amzn.to/3S5XfhS',
-    status: 'unread',
+    title:
+      'わたしたちのウェルビーイングをつくりあうために その思想、実践、技術',
+    author: '渡邊淳司, ドミニク・チェン',
+    imageUrl: '/data/library/wellbeing.jpg',
+    url: 'https://amzn.to/3tGPFks',
+    status: 'read',
+    readDate: '2023/11',
   },
-  // Add more books as needed
+  {
+    title: 'なぜ男女の賃金に格差があるのか：女性の生き方の経済学',
+    author: 'クラウディア・ゴールディン',
+    imageUrl: '/data/library/kakusa.jpg',
+    url: 'https://amzn.to/48bQf8R',
+    status: 'read',
+    readDate: '2023/10',
+  },
 ]
 
 export default books

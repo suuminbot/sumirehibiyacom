@@ -7,18 +7,25 @@ type BookCardProps = {
   author: string
   status: string
   url: string
+  readDate?: string
 }
 
 // 未読・読了・読書中のステータス別表示のためのコンポーネント
 type StatusComponentProps = {
   color: string
   label: string
+  readDate?: string
 }
 
-const StatusComponent: React.FC<StatusComponentProps> = ({ color, label }) => (
+const StatusComponent: React.FC<StatusComponentProps> = ({
+  color,
+  label,
+  readDate,
+}) => (
   <div className="text-xs inline-flex items-center py-1 px-2 border rounded-lg">
     <p className={`h-3 w-3 mr-1 rounded-full ${color}`} />
     <p className="leading-none">{label}</p>
+    {readDate && <p>({readDate})</p>}
   </div>
 )
 
@@ -29,6 +36,7 @@ const BookCard: React.FC<BookCardProps> = ({
   author,
   status,
   url,
+  readDate,
 }) => (
   <Link
     href={url}
@@ -61,6 +69,7 @@ const BookCard: React.FC<BookCardProps> = ({
           label={
             status === 'read' ? '読了' : status === 'unread' ? '未読' : '読書中'
           }
+          readDate={readDate}
         />
       ) : (
         <p className="text-xs">{status}</p>

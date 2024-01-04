@@ -20,6 +20,7 @@ const Library: React.FC = () => (
           author={book.author}
           status={book.status}
           url={book.url}
+          readDate={book.readDate}
         />
       ))}
     </div>
