@@ -30,20 +30,20 @@ const Header: React.FC = () => {
         justify-center
         flex-col
         items-center
-        p-6
-        
+        p-5
+
         // tablet以上でのスタイル
         md:flex-row
         md:justify-between
         md:p-10"
     >
-      <div className="flex items-center mb-4 md:mb-0">
-        <h1 className="text-xl !leading-none">
+      <div className="flex items-center mb-3 md:mb-0">
+        <h1 className="text-lg md:text-xl !leading-none">
           <Link href="/" className="hover:no-underline mr-4">
             Scratchpad
           </Link>
         </h1>
-        <p>by @suuminbot</p>
+        <p className="text-xs">by @suuminbot</p>
       </div>
       <div>
         <MenuLink href="/" label="HOME" currentPath={currentPath} />

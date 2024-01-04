@@ -10,7 +10,7 @@ type MenuLinkProps = {
 const MenuLink: React.FC<MenuLinkProps> = ({ href, label, currentPath }) => (
   <Link
     href={href}
-    className={`text-xs p-2 mx-0.5 !leading-none hover:no-underline ${
+    className={`text-xs px-1 py-2 md:p-2 mx-0.5 !leading-none hover:no-underline ${
       currentPath === href ? 'bg-white rounded-lg ' : ''
     }`}
   >
