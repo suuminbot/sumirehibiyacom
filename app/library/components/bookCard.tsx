@@ -9,6 +9,7 @@ type BookCardProps = {
   url: string
 }
 
+// 未読・読了・読書中のステータス別表示のためのコンポーネント
 type StatusComponentProps = {
   color: string
   label: string
@@ -21,6 +22,7 @@ const StatusComponent: React.FC<StatusComponentProps> = ({ color, label }) => (
   </div>
 )
 
+// BookCard本体
 const BookCard: React.FC<BookCardProps> = ({
   title,
   imageUrl,
@@ -39,7 +41,7 @@ const BookCard: React.FC<BookCardProps> = ({
         src={imageUrl}
         alt={title}
         className="object-contain w-auto group-hover:scale-105 group-hover:shadow-xl group-hover:duration-300"
-        fill="true"
+        fill
       />
     </div>
     <div className="group">
