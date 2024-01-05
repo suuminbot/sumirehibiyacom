@@ -10,7 +10,7 @@ export type Bookmark = {
 
 const Bookmarks: Bookmark[] = [
   {
-    title: 'YouTube',
+    title: 'Website',
     faviconUrl:
       'https://www.youtube.com/s/desktop/f4449159/img/favicon_32x32.png',
     url: 'https://www.youtube.com/',
@@ -20,13 +20,13 @@ const Bookmarks: Bookmark[] = [
     comment: 'hoge',
   },
   {
-    title: 'YouTube',
+    title: 'Article',
     faviconUrl:
       'https://www.youtube.com/s/desktop/f4449159/img/favicon_32x32.png',
     url: 'https://www.youtube.com/',
     domain: 'www.youtube.com',
     bookmarkDate: '2024/01/04',
-    category: 'website',
+    category: 'article',
     comment: 'hoge',
   },
   {

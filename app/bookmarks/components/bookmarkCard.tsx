@@ -34,7 +34,7 @@ const BookmarkCard: React.FC<BookmarkCardProps> = ({
         alt={title}
         className="mr-2 h-4"
       />
-      <p className="text-base group-hover:text-violet-600 group-hover:duration-300">
+      <p className="text-base group-hover:text-emerald-600 group-hover:duration-300">
         {title}
       </p>
     </div>
