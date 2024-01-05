@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     fontFamily: {
       sans: ['var(--font-inter)'],
-      display: ['var(--font-josefinsans)'],
+      display: ['var(--font-poppins)'],
     },
     extend: {
       colors: {
