@@ -38,7 +38,7 @@ const Header: React.FC = () => {
         md:p-10"
     >
       <div className="flex items-center mb-3 md:mb-0">
-        <h1 className="text-lg md:text-xl !leading-none">
+        <h1 className="text-lg !leading-none">
           <Link href="/" className="hover:no-underline mr-4">
             Sumire Hibiya
           </Link>
