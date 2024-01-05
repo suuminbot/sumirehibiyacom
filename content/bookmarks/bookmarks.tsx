@@ -10,6 +10,26 @@ export type Bookmark = {
 
 const Bookmarks: Bookmark[] = [
   {
+    title: 'System of Record と System of Engagement - Speaker Deck',
+    url: 'https://speakerdeck.com/naoya/system-of-record-to-system-of-engagement',
+    domain: 'speakerdeck.com',
+    faviconUrl:
+      'https://www.google.com/s2/favicons?domain=https://speakerdeck.com/naoya/system-of-record-to-system-of-engagement',
+    bookmarkDate: '2024/01/05',
+    category: 'article',
+    comment: '',
+  },
+  {
+    title: '些末なコードレビュー - naoyaのはてなダイアリー',
+    url: 'https://naoya-2.hatenadiary.org/entry/20140313/1394664578',
+    domain: 'naoya-2.hatenadiary.org',
+    faviconUrl:
+      'https://www.google.com/s2/favicons?domain=https://naoya-2.hatenadiary.org/entry/20140313/1394664578',
+    bookmarkDate: '2024/01/05',
+    category: 'article',
+    comment: '',
+  },
+  {
     title: 'Dale-Anthony - Product Designer',
     url: 'https://daleanthony.com/',
     domain: 'daleanthony.com',
