@@ -16,7 +16,7 @@ type Props = {
 
 export async function generateMetadata({ params }: Props) {
   const { slug } = params
-  const filePath = path.join(process.cwd(), 'content', `${slug}.md`)
+  const filePath = path.join(process.cwd(), 'content/notes', `${slug}.md`)
 
   // ファイルの中身を取得
   const fileContents = fs.readFileSync(filePath, 'utf8')
@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: Props) {
 // ブログ記事ページ
 export default async function BlogPost({ params }: Props) {
   const { slug } = params
-  const filePath = path.join(process.cwd(), 'content', `${slug}.md`)
+  const filePath = path.join(process.cwd(), 'content/notes', `${slug}.md`)
 
   // ファイルの中身を取得
   const fileContents = fs.readFileSync(filePath, 'utf8')

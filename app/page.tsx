@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 export default async function Home() {
   // contentディレクトリ内のマークダウンファイル一覧を取得
-  const postsDirectory = path.join(process.cwd(), 'content')
+  const postsDirectory = path.join(process.cwd(), 'content/notes')
   const fileNames = fs.readdirSync(postsDirectory)
 
   // 各ファイルの中身を取得

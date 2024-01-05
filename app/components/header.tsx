@@ -48,6 +48,11 @@ const Header: React.FC = () => {
       <div>
         <MenuLink href="/" label="HOME" currentPath={currentPath} />
         <MenuLink href="/library" label="LIBRARY" currentPath={currentPath} />
+        <MenuLink
+          href="/bookmarks"
+          label="BOOKMARKS"
+          currentPath={currentPath}
+        />
         <MenuLink href="/about" label="ABOUT" currentPath={currentPath} />
       </div>
     </header>
