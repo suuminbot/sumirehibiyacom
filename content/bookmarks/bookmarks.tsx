@@ -10,34 +10,22 @@ export type Bookmark = {
 
 const Bookmarks: Bookmark[] = [
   {
-    title: 'Website',
-    faviconUrl:
-      'https://www.youtube.com/s/desktop/f4449159/img/favicon_32x32.png',
-    url: 'https://www.youtube.com/',
-    domain: 'www.youtube.com',
-    bookmarkDate: '2024/01/04',
+    title: 'Brian Lovin',
+    faviconUrl: 'https://brianlovin.com/static/favicon.ico',
+    url: 'https://brianlovin.com/',
+    domain: 'brianlovin.comm',
+    bookmarkDate: '2024/01/05',
     category: 'website',
     comment: '',
   },
   {
-    title: 'Article',
-    faviconUrl:
-      'https://www.youtube.com/s/desktop/f4449159/img/favicon_32x32.png',
-    url: 'https://www.youtube.com/',
-    domain: 'www.youtube.com',
-    bookmarkDate: '2024/01/04',
-    category: 'article',
-    comment: '',
-  },
-  {
-    title: 'YouTube',
-    faviconUrl:
-      'https://www.youtube.com/s/desktop/f4449159/img/favicon_32x32.png',
-    url: 'https://www.youtube.com/',
-    domain: 'www.youtube.com',
-    bookmarkDate: '2024/01/04',
+    title: 'Maggie Appleton',
+    faviconUrl: 'https://maggieappleton.com/images/favicon/favicon.ico',
+    url: 'https://maggieappleton.com/',
+    domain: 'maggieappleton.com',
+    bookmarkDate: '2024/01/05',
     category: 'website',
-    comment: 'hoge',
+    comment: '',
   },
 ]
 
