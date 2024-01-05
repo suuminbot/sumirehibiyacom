@@ -17,7 +17,7 @@ const Bookmarks: Bookmark[] = [
     domain: 'www.youtube.com',
     bookmarkDate: '2024/01/04',
     category: 'website',
-    comment: 'hoge',
+    comment: '',
   },
   {
     title: 'Article',
@@ -27,7 +27,7 @@ const Bookmarks: Bookmark[] = [
     domain: 'www.youtube.com',
     bookmarkDate: '2024/01/04',
     category: 'article',
-    comment: 'hoge',
+    comment: '',
   },
   {
     title: 'YouTube',

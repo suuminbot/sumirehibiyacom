@@ -41,9 +41,9 @@ const BookmarkCard: React.FC<BookmarkCardProps> = ({
     <p className="text-xs text-slate-600 mb-2">
       {domain} #{category}
     </p>
-    <div className="p-2 rounded-md bg-neutral-200">
-      {bookmarkDate}
-      {comment}
+    <div className="p-2 flex items-center rounded-md bg-neutral-200 bg-opacity-70">
+      <p className="text-xs mr-2 text-slate-600">{bookmarkDate}</p>
+      <p>{comment}</p>
     </div>
   </Link>
 )

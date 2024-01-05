@@ -13,7 +13,7 @@ const BookmarksList: React.FC = () => {
 
   return (
     <div className="grid grid-cols-4 gap-4">
-      <div className="col-span-1">
+      <div className="col-span-4 flex md:col-span-1 md:block">
         {/* menu */}
         <Menu
           label="All"
@@ -31,7 +31,7 @@ const BookmarksList: React.FC = () => {
           selected={selectedCategory === 'article'}
         />
       </div>
-      <div className="col-span-3">
+      <div className="col-span-4 md:col-span-3">
         {BookmarksData.filter((bookmark) =>
           selectedCategory ? bookmark.category === selectedCategory : true
         ).map((bookmark) => (
