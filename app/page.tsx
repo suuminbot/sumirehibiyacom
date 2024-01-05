@@ -17,6 +17,7 @@ const Home: React.FC = () => (
     {ActivitiesData.map((activity) => (
       <ActivityCard
         key={activity.title}
+        category={activity.category}
         title={activity.title}
         date={activity.date}
         url={activity.url}
