@@ -1,6 +1,7 @@
-import Link from 'next/link'
-// import Image from 'next/image'
 import type { Metadata } from 'next'
+import ActivityCard from './home/activityCard'
+import ActivitiesData from '../content/activities/activities'
+import Profile from './home/profile'
 
 export const metadata: Metadata = {
   title: 'sumirehibiya.com',
@@ -9,40 +10,19 @@ export const metadata: Metadata = {
   },
 }
 
-export default function Home() {
-  return (
-    <div className="w-1/2 m-auto">
-      <div className="mb-24">
-        <p className="mb-2 text-2xl font-display !leading-tight">
-          Product designer crafting solutions at the intersection of user
-          problem-solving and business outcomes.
-        </p>
-        <p className="mb-2 !leading-relaxed">
-          I'm Sumire Hibiya, a Tokyo based product designer with ten years of
-          experience. I'm currently working at{' '}
-          <Link href="https://10x.co.jp/" target="_blank">
-            10X
-          </Link>{' '}
-          which is developing a product “Stailer” to establish and operate an
-          online grocery store for retail businesses.
-        </p>
-        <p className="!leading-relaxed">
-          I value deeply understanding user, prototyping, design systems and
-          team communications.
-        </p>
-        <Link href="/about" />
-      </div>
-      <h2 className="font-display">Activities</h2>
-      <div>
-        {/* card */}
-        <div className="flex">
-          <div>
-            {' '}
-            <p>date</p>
-            <p>content</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  )
-}
+const Home: React.FC = () => (
+  <div className="w-1/2 m-auto">
+    <Profile />
+    <h2 className="font-display">Activities</h2>
+    {ActivitiesData.map((activity) => (
+      <ActivityCard
+        key={activity.title}
+        title={activity.title}
+        date={activity.date}
+        url={activity.url}
+      />
+    ))}
+  </div>
+)
+
+export default Home
