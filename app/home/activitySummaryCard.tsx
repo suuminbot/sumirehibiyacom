@@ -48,17 +48,17 @@ const ActivitySummaryCard: React.FC<ActivitySummaryCardProps> = ({
   }
 
   return (
-    <div className="bg-white py-4 px-6 rounded-lg">
-      <div className="flex items-center mb-2">
+    <div className="bg-white py-3 px-4 md:py-4 md:px-6 rounded-lg">
+      <div className="flex items-center md:mb-2">
         <FontAwesomeIcon
           icon={categoryIcon}
-          className={`h-4 mr-2 ${categoryIconColor}`}
+          className={`h-4 mr-2 flex-none ${categoryIconColor}`}
         />
         <p className={`text-xs font-bold font-display ${categoryIconColor}`}>
           {category}
         </p>
       </div>
-      <p className="text-xs mb-6">{description}</p>
+      <p className="text-xs text-stone-600 mb-2 md:mb-6">{description}</p>
       <p className="text-xl font-bold font-display">{number}</p>
     </div>
   )

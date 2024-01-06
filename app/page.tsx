@@ -20,18 +20,18 @@ const Home: React.FC = () => {
       <div className="mb-16">
         <Profile />
       </div>
-      <div className="border-l border-stone-200 pl-6 relative">
+      <div className="ml-4 border-l border-stone-200 pl-6 pb-10 relative">
         <h2
           className="
             before:block before:h-8 before:w-8 before:bg-stone-100 before:absolute before:-left-[17px]
             after:block after:w-[11px] after:h-[11px] after:rounded-full after:bg-stone-300 after:absolute after:-left-[6px]
-            font-display m-0
+            font-display m-0 px-2
             flex items-center
            "
         >
           2024
         </h2>
-        <div className="grid grid-cols-3 gap-4 my-4">
+        <div className="px-2 my-4 grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 ">
           <ActivitySummaryCard category="Notes" number="0" />
           <ActivitySummaryCard category="Library" number="1" />
           <ActivitySummaryCard category="Bookmarks" number="4" />
@@ -45,6 +45,23 @@ const Home: React.FC = () => {
             url={activity.url}
           />
         ))}
+      </div>
+      <div className="ml-4 border-l border-stone-200 pl-6 pb-10 relative">
+        <h2
+          className="
+            before:block before:h-8 before:w-8 before:bg-stone-100 before:absolute before:-left-[17px]
+            after:block after:w-[11px] after:h-[11px] after:rounded-full after:bg-stone-300 after:absolute after:-left-[6px]
+            font-display m-0 px-2
+            flex items-center
+           "
+        >
+          2023
+        </h2>
+        <div className="px-2 my-4 grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 ">
+          <ActivitySummaryCard category="Notes" number="3" />
+          <ActivitySummaryCard category="Library" number="28" />
+          <ActivitySummaryCard category="Bookmarks" number="0" />
+        </div>
       </div>
     </div>
   )
