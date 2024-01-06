@@ -56,9 +56,6 @@ const ActivityCard: React.FC<ActivityCardProps> = ({
 
   return (
     <div className="flex items-center relative">
-      <div className="w-6 h-6 bg-white border rounded-full mr-4 flex items-center justify-center relative z-10">
-        <div className="w-2 h-2 bg-slate-400 rounded-full" />
-      </div>
       <Link
         href={url}
         className={`
@@ -86,7 +83,6 @@ const ActivityCard: React.FC<ActivityCardProps> = ({
           <FontAwesomeIcon icon={faArrowRight} className="h-4 text-slate-400" />
         </div>
       </Link>
-      <div className="absolute h-full w-[1px] bg-slate-300 bg-opacity-50 left-3" />
     </div>
   )
 }
