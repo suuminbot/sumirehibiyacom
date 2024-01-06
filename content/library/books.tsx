@@ -74,7 +74,7 @@ const books: Book[] = [
     imageUrl: '/data/library/kakusa.jpg',
     url: 'https://amzn.to/48bQf8R',
     status: 'read',
-    readDate: '2023/10',
+    readDate: '2023-10-01',
   },
 ]
 

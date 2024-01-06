@@ -5,7 +5,7 @@ export type Bookmark = {
   domain: string
   bookmarkDate: string
   category: 'website' | 'article'
-  comment?: string
+  comment: string
 }
 
 const Bookmarks: Bookmark[] = [

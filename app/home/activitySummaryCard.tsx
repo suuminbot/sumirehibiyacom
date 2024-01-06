@@ -9,7 +9,7 @@ import {
 
 type ActivitySummaryCardProps = {
   category: string
-  number: string
+  number: number
 }
 
 const ActivitySummaryCard: React.FC<ActivitySummaryCardProps> = ({
