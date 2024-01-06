@@ -10,6 +10,65 @@ export type Bookmark = {
 
 const Bookmarks: Bookmark[] = [
   {
+    title: 'Krijn Rijshouwer - Product Designer & Advisor',
+    url: 'https://www.krijnrijshouwer.com/',
+    domain: 'www.krijnrijshouwer.com',
+    faviconUrl:
+      'https://www.google.com/s2/favicons?domain=https://www.krijnrijshouwer.com/',
+    bookmarkDate: '2024/01/06',
+    category: 'website',
+    comment: '',
+  },
+  {
+    title: 'Ryan Mack',
+    url: 'https://ryanmack.me/',
+    domain: 'ryanmack.me',
+    faviconUrl:
+      'https://www.google.com/s2/favicons?domain=https://ryanmack.me/',
+    bookmarkDate: '2024/01/06',
+    category: 'website',
+    comment: '3columns',
+  },
+  {
+    title: 'Simone Magurno › Brand, Product & Systems Design',
+    url: 'https://magur.no/',
+    domain: 'magur.no',
+    faviconUrl: 'https://www.google.com/s2/favicons?domain=https://magur.no/',
+    bookmarkDate: '2024/01/06',
+    category: 'website',
+    comment: '活動のタイムライン表示',
+  },
+  {
+    title: 'Marc Bouchenoire',
+    url: 'https://marcbouchenoire.com/',
+    domain: 'marcbouchenoire.com',
+    faviconUrl:
+      'https://www.google.com/s2/favicons?domain=https://marcbouchenoire.com/',
+    bookmarkDate: '2024/01/06',
+    category: 'website',
+    comment: 'Activity表示がかわいい',
+  },
+  {
+    title: 'Modified Title',
+    url: 'https://daleanthony.com/',
+    domain: 'daleanthony.com',
+    faviconUrl:
+      'https://www.google.com/s2/favicons?domain=https://daleanthony.com/',
+    bookmarkDate: '2024/01/06',
+    category: 'website',
+    comment: 'Dale-Anthonyさんの個人サイト',
+  },
+  {
+    title: 'OpenPurpose® — Design Partner for Founders',
+    url: 'https://openpurpose.com/?ref=land-book.com',
+    domain: 'openpurpose.com',
+    faviconUrl:
+      'https://www.google.com/s2/favicons?domain=https://openpurpose.com/?ref=land-book.com',
+    bookmarkDate: '2024/01/06',
+    category: 'website',
+    comment: '',
+  },
+  {
     title: 'System of Record と System of Engagement - Speaker Deck',
     url: 'https://speakerdeck.com/naoya/system-of-record-to-system-of-engagement',
     domain: 'speakerdeck.com',
