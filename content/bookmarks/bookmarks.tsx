@@ -49,16 +49,6 @@ const Bookmarks: Bookmark[] = [
     comment: 'Activity表示がかわいい',
   },
   {
-    title: 'Modified Title',
-    url: 'https://daleanthony.com/',
-    domain: 'daleanthony.com',
-    faviconUrl:
-      'https://www.google.com/s2/favicons?domain=https://daleanthony.com/',
-    bookmarkDate: '2024/01/06',
-    category: 'website',
-    comment: 'Dale-Anthonyさんの個人サイト',
-  },
-  {
     title: 'OpenPurpose® — Design Partner for Founders',
     url: 'https://openpurpose.com/?ref=land-book.com',
     domain: 'openpurpose.com',
