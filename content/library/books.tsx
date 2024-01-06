@@ -1,11 +1,24 @@
-export type Book = {
+type BookBase = {
   title: string
   author: string
   imageUrl: string
   url: string
-  status: 'unread' | 'inProgress' | 'read'
-  readDate?: string // 読了年月 例) 2024/01
 }
+
+type UnReadBook = BookBase & {
+  status: 'unread'
+}
+
+type InProgressBook = BookBase & {
+  status: 'inProgress'
+}
+
+type ReadBook = BookBase & {
+  status: 'read'
+  readDate: string // ex. 2023-02-01
+}
+
+export type Book = UnReadBook | InProgressBook | ReadBook
 
 const books: Book[] = [
   {
@@ -36,7 +49,7 @@ const books: Book[] = [
     imageUrl: '/data/library/samish.jpg',
     url: 'https://amzn.to/3S5XfhS',
     status: 'read',
-    readDate: '2023/11',
+    readDate: '2023-11-01',
   },
   {
     title: 'ヘルシンキ 生活の練習',
@@ -44,7 +57,7 @@ const books: Book[] = [
     imageUrl: '/data/library/helsinki.jpg',
     url: 'https://amzn.to/3S9dTgQ',
     status: 'read',
-    readDate: '2023/11',
+    readDate: '2023-11-02',
   },
   {
     title:
@@ -53,7 +66,7 @@ const books: Book[] = [
     imageUrl: '/data/library/wellbeing.jpg',
     url: 'https://amzn.to/3tGPFks',
     status: 'read',
-    readDate: '2023/11',
+    readDate: '2023-11-03',
   },
   {
     title: 'なぜ男女の賃金に格差があるのか：女性の生き方の経済学',
