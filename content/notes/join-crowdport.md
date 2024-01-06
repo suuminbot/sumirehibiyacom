@@ -4,8 +4,6 @@ excerpt: '2017年6月で2年半勤めた株式会社グッドパッチを退職�
 coverImage: '/blog/join-crowdport/lending-startup-night.jpg'
 date: '2017-09-03'
 icon: '📝'
-ogImage:
-  url: '/blog/join-crowdport/lending-startup-night.jpg'
 ---
 
 2017 年 6 月で 2 年半勤めた株式会社グッドパッチを退職し、ソーシャルレンディング専門メディアを運営する[クラウドポート](https://www.crowdport.jp/)に join しました！

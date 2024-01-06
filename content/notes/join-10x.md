@@ -4,8 +4,6 @@ excerpt: '2017年6月で2年半勤めた株式会社グッドパッチを退職�
 coverImage: '/blog/join-10x/cover.jpg'
 date: '2021-03-02'
 icon: '🌾'
-ogImage:
-  url: '/blog/join-10x/cover.jpg'
 ---
 
 皆さんこんにちは。suuminbotこと日比谷です。創業当初から約4年勤めたファンズ株式会社を退職し、2021年2月22日社員番号22番😸で **[株式会社10X](https://10x.co.jp/)にデザイナーとして入社しました。** やっていくぞい、という久々のブログです！

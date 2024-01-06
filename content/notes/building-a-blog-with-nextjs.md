@@ -4,8 +4,6 @@ excerpt: 'Next.js, Tailwind CSSでブログを作った話です'
 coverImage: '/blog/building-a-blog-with-nextjs/cover.jpg'
 date: '2021-03-21'
 icon: '👩‍💻'
-ogImage:
-  url: '/blog/building-a-blog-with-nextjs/cover.jpg'
 ---
 
 転職に際してブログを書きたいな〜と思ったタイミングで、数年間放置していたこの個人サイト（ブログ）をNext.jsとTailwind CSSで作り直しました。

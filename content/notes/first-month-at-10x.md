@@ -4,8 +4,6 @@ excerpt: 10Xで1ヶ月働いたリアルな感想です。'
 coverImage: '/blog/first-month-at-10x/cover.jpg'
 date: '2021-04-02'
 icon: '🌸'
-ogImage:
-  url: '/blog/first-month-at-10x/cover.jpg'
 ---
 
 2月下旬に入社して気づいたらあっという間に1ヶ月経っていたのでリアルな感想をメモっておこうと思います。

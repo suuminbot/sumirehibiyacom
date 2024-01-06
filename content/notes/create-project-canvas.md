@@ -4,8 +4,6 @@ excerpt: 'デザイン案件のオリエンやキックオフに参加する時�
 coverImage: '/blog/create-project-canvas/coverImage.jpg'
 icon: '📝'
 date: '2017-11-26'
-ogImage:
-  url: '/blog/create-project-canvas/coverImage.jpg'
 ---
 
 Photo by Patrick Perkins on Unsplash

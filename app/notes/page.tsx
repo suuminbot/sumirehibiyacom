@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import type { Metadata } from 'next'
 import PageTitle from '../components/pageTitle'
+import getNotes from '../../content/notes/notes'
 
 export const metadata: Metadata = {
   title: 'sumirehibiya.com',
@@ -14,33 +15,25 @@ export const metadata: Metadata = {
 }
 
 export default async function Home() {
-  // contentディレクトリ内のマークダウンファイル一覧を取得
-  const postsDirectory = path.join(process.cwd(), 'content/notes')
-  const fileNames = fs.readdirSync(postsDirectory)
+  const notes = await getNotes()
 
-  // 各ファイルの中身を取得
   const posts = await Promise.all(
-    // 各ファイル情報を取得
-    fileNames.map(async (fileName) => {
-      const filePath = path.join(postsDirectory, fileName)
-      const fileContents = fs.readFileSync(filePath, 'utf8')
-      const { data } = matter(fileContents)
-      const date = new Date(data.date) // 記事の日付
+    notes.map(async (note) => {
+      const date = new Date(note.date)
       const d = `${date.getFullYear()}年${('0' + (date.getMonth() + 1)).slice(
         -2
       )}月${('0' + date.getDate()).slice(-2)}日`
-
       // slugとfrontmatter(title, date, description)を取得
       return {
-        slug: fileName.replace('.md', ''),
-        frontmatter: data,
+        slug: note.fileName.replace('.md', ''),
+        note: note,
         d: d,
       }
     })
   ).then((posts) =>
     // 最新日付順に並び替え
     posts.sort((a, b) =>
-      new Date(b.frontmatter.date) > new Date(a.frontmatter.date) ? 1 : -1
+      new Date(b.note.date) > new Date(a.note.date) ? 1 : -1
     )
   )
 
@@ -54,12 +47,10 @@ export default async function Home() {
               href={`/notes/${post.slug}`}
               className="mr-6 w-20 h-20 md:w-32 md:h-32 flex-none relative flex justify-center items-center hover:no-underline"
             >
-              <p className="z-10 p-4 bg-white rounded">
-                {post.frontmatter.icon}
-              </p>
+              <p className="z-10 p-4 bg-white rounded">{post.note.icon}</p>
               <Image
-                src={`${post.frontmatter.coverImage}`}
-                alt={`${post.frontmatter.title}`}
+                src={`${post.note.coverImage}`}
+                alt={`${post.note.title}`}
                 fill
                 className="object-cover"
               />
@@ -69,7 +60,7 @@ export default async function Home() {
                 href={`/notes/${post.slug}`}
                 className="text-sm font-bold block mb-2"
               >
-                {post.frontmatter.title}
+                {post.note.title}
               </Link>
               <p className="text-xs">{post.d}</p>
             </div>
