@@ -5,7 +5,7 @@ export default function Profile() {
   return (
     <div className="flex items-start">
       <Image
-        src="/profile@2x.png"
+        src="/profile.jpg"
         alt="Sumire Hibiya"
         width="96"
         height="96"

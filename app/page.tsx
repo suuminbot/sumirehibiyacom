@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import ActivityCard from './home/activityCard'
 import ActivitiesData from '../content/activities/activities'
 import Profile from './home/profile'
+import ActivitySummaryCard from './home/activitySummaryCard'
 
 export const metadata: Metadata = {
   title: 'sumirehibiya.com',
@@ -19,17 +20,22 @@ const Home: React.FC = () => {
       <div className="mb-16">
         <Profile />
       </div>
-      <div className="border-l-2 pl-6 relative">
+      <div className="border-l border-stone-200 pl-6 relative">
         <h2
           className="
-            before:block before:h-8 before:w-8 before:bg-white before:absolute before:-left-5
-            font-display
+            before:block before:h-8 before:w-8 before:bg-stone-100 before:absolute before:-left-[17px]
+            after:block after:w-[11px] after:h-[11px] after:rounded-full after:bg-stone-300 after:absolute after:-left-[6px]
+            font-display m-0
             flex items-center
            "
         >
-          <p className="w-2 h-2 rounded-full bg-stone-400 -ml-8"></p>
-          <p>2024</p>
+          2024
         </h2>
+        <div className="grid grid-cols-3 gap-4 my-4">
+          <ActivitySummaryCard category="Notes" number="0" />
+          <ActivitySummaryCard category="Library" number="1" />
+          <ActivitySummaryCard category="Bookmarks" number="4" />
+        </div>
         {latestActivities.map((activity) => (
           <ActivityCard
             key={activity.title}
