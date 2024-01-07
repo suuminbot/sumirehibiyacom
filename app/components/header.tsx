@@ -38,15 +38,15 @@ const Header: React.FC = () => {
         md:p-10"
     >
       <div className="flex items-center mb-3 md:mb-0">
-        <h1 className="text-lg md:text-xl !leading-none">
+        <h1 className="text-lg !leading-none">
           <Link href="/" className="hover:no-underline mr-4">
-            Scratchpad
+            Sumire Hibiya
           </Link>
         </h1>
-        <p className="text-xs">by @suuminbot</p>
       </div>
       <div>
         <MenuLink href="/" label="HOME" currentPath={currentPath} />
+        <MenuLink href="/notes" label="NOTES" currentPath={currentPath} />
         <MenuLink href="/library" label="LIBRARY" currentPath={currentPath} />
         <MenuLink
           href="/bookmarks"

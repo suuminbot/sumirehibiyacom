@@ -10,10 +10,10 @@
     @apply hover:underline;
   }
   h2 {
-    @apply my-4 text-2xl font-bold;
+    @apply my-4 text-xl;
   }
   h3 {
-    @apply mt-12 mb-4 text-lg font-bold;
+    @apply mt-12 mb-4 text-lg;
   }
   h3:first-child {
     @apply mt-0;

@@ -1,9 +1,8 @@
-import fs from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
-import Link from 'next/link'
-import Image from 'next/image'
 import type { Metadata } from 'next'
+import ActivityCard from './home/activityCard'
+import ActivitiesData from '../content/activities/activities'
+import Profile from './home/profile'
+import ActivitySummaryCard from './home/activitySummaryCard'
 
 export const metadata: Metadata = {
   title: 'sumirehibiya.com',
@@ -12,64 +11,60 @@ export const metadata: Metadata = {
   },
 }
 
-export default async function Home() {
-  // contentディレクトリ内のマークダウンファイル一覧を取得
-  const postsDirectory = path.join(process.cwd(), 'content/notes')
-  const fileNames = fs.readdirSync(postsDirectory)
-
-  // 各ファイルの中身を取得
-  const posts = await Promise.all(
-    // 各ファイル情報を取得
-    fileNames.map(async (fileName) => {
-      const filePath = path.join(postsDirectory, fileName)
-      const fileContents = fs.readFileSync(filePath, 'utf8')
-      const { data } = matter(fileContents)
-      const date = new Date(data.date) // 記事の日付
-      const d = `${date.getFullYear()}年${('0' + (date.getMonth() + 1)).slice(
-        -2
-      )}月${('0' + date.getDate()).slice(-2)}日`
-
-      // slugとfrontmatter(title, date, description)を取得
-      return {
-        slug: fileName.replace('.md', ''),
-        frontmatter: data,
-        d: d,
-      }
-    })
-  ).then((posts) =>
-    // 最新日付順に並び替え
-    posts.sort((a, b) =>
-      new Date(b.frontmatter.date) > new Date(a.frontmatter.date) ? 1 : -1
-    )
-  )
+const Home: React.FC = () => {
+  // ActivitiesData を最新の5件だけ取得
+  const latestActivities = ActivitiesData.slice(0, 5)
 
   return (
-    <div className="grid gap-4 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
-      {posts.map((post) => (
-        <div key={post.slug} className="flex mb-10 items-center">
-          <Link
-            href={`/notes/${post.slug}`}
-            className="mr-6 w-20 h-20 md:w-32 md:h-32 flex-none relative flex justify-center items-center hover:no-underline"
-          >
-            <p className="z-10 p-4 bg-white rounded">{post.frontmatter.icon}</p>
-            <Image
-              src={`${post.frontmatter.coverImage}`}
-              alt={`${post.frontmatter.title}`}
-              fill
-              className="object-cover"
-            />
-          </Link>
-          <div>
-            <Link
-              href={`/notes/${post.slug}`}
-              className="text-sm font-bold block mb-2"
-            >
-              {post.frontmatter.title}
-            </Link>
-            <p className="text-xs">{post.d}</p>
-          </div>
+    <div className="m-auto w-auto md:w-4/5 lg:w-3/5">
+      <div className="mb-16">
+        <Profile />
+      </div>
+      <div className="ml-4 border-l border-stone-200 pl-6 pb-10 relative">
+        <h2
+          className="
+            before:block before:h-8 before:w-8 before:bg-stone-100 before:absolute before:-left-[17px]
+            after:block after:w-[11px] after:h-[11px] after:rounded-full after:bg-stone-300 after:absolute after:-left-[6px]
+            font-display m-0 px-2
+            flex items-center
+           "
+        >
+          2024
+        </h2>
+        <div className="px-2 my-4 grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 ">
+          <ActivitySummaryCard category="Notes" number="0" />
+          <ActivitySummaryCard category="Library" number="1" />
+          <ActivitySummaryCard category="Bookmarks" number="4" />
         </div>
-      ))}
+        {latestActivities.map((activity) => (
+          <ActivityCard
+            key={activity.title}
+            category={activity.category}
+            title={activity.title}
+            date={activity.date}
+            url={activity.url}
+          />
+        ))}
+      </div>
+      <div className="ml-4 border-l border-stone-200 pl-6 pb-10 relative">
+        <h2
+          className="
+            before:block before:h-8 before:w-8 before:bg-stone-100 before:absolute before:-left-[17px]
+            after:block after:w-[11px] after:h-[11px] after:rounded-full after:bg-stone-300 after:absolute after:-left-[6px]
+            font-display m-0 px-2
+            flex items-center
+           "
+        >
+          2023
+        </h2>
+        <div className="px-2 my-4 grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-4 ">
+          <ActivitySummaryCard category="Notes" number="3" />
+          <ActivitySummaryCard category="Library" number="28" />
+          <ActivitySummaryCard category="Bookmarks" number="0" />
+        </div>
+      </div>
     </div>
   )
 }
+
+export default Home
